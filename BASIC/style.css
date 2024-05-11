@@ -1,0 +1,28 @@
+.prop1{
+    color: green;
+}
+.bor{
+    border: 1px solid blue;
+
+}
+#id1{
+    color: blue;
+    margin-top:100px;
+}
+
+#form1{
+    background-color: antiquewhite;
+    width: 400px;
+
+}
+
+
+input[type =text]:focus,input[type=password]:focus{
+    background-color: aqua;
+}
+
+input[type =text],input[type=password]{
+    background-color: aqua;
+    width: 100%;
+}
+

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
+button,h2,h3{
+    font-size: 50px;
+}
+
+
+#counter {
+    display: inline-block;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Create a circle */
+    background-color: pink; /* Set background color */
+    line-height: 50px; /* Vertically center text */
+    text-align: center; /* Horizontally center text */
+    margin: 0; /* Remove default margin */
+}

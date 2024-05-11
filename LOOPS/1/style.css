@@ -1,0 +1,23 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'monument';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+css
+input{
+    font-size: 20px;
+    border: 2px solid #dadada;
+    outline-color: royalblue;
+    border-radius: 2px;
+}
+
+button{
+    font-size: 20px;
+}
