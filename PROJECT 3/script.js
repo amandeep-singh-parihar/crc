@@ -109,7 +109,7 @@ function generateRandomPassword() {
 }
 
 pass.addEventListener("click", () => {
-    pas.textContent=generateRandomPassword();
+  pas.textContent = generateRandomPassword();
 });
 
 //atm
@@ -118,11 +118,10 @@ let atm = document.querySelector("#atm");
 let atmpin = document.querySelector("#atmpin");
 
 function generateATMPin() {
-    const pin = Math.floor(1000 + Math.random() * 9000); // Generate a random 4-digit number
-    return pin.toString().padStart(4, '0'); // Ensure it's always 4 digits
-  }
-  
-atmpin.addEventListener("click",()=>{
-    atm.textContent=generateATMPin();
-})
-  
+  const pin = Math.floor(1000 + Math.random() * 9000); // Generate a random 4-digit number
+  return pin.toString().padStart(4, "0"); // Ensure it's always 4 digits
+}
+
+atmpin.addEventListener("click", () => {
+  atm.textContent = generateATMPin();
+});
