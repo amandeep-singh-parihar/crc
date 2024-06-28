@@ -9,7 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #f2e8cf;
+  background-color: #f7ead6;
 }
 
 nav {
@@ -31,13 +31,15 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
   box-sizing: border-box;
-  width: 28vw;
-  height: 82vh;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   background: #fff;
   border: 2px solid #6a994e;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -46,6 +48,8 @@ nav {
   text-align: center;
   cursor: pointer;
   transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   user-select: none;
@@ -59,7 +63,7 @@ nav {
 }
 
 #img-div img {
-  height: 30vh;
+  height: 150px;
   margin-top: 20px;
   /* background-color: red; */
 }
@@ -71,34 +75,34 @@ nav {
 }
 
 #generate {
-  font-size: 30px;
-  margin-top: 120px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: 600;
   border: 2px solid #386641;
   color: #386641;
   border-radius: 35px;
-  height: 6vh;
-  width: 10vw;
+  height: 40px;
+  width: 80%;
 }
 
 .card h2 {
-  padding-top: 50px;
-  font-size: 100px;
+  padding-top: 20px;
+  font-size: 40px;
   color: #6a994e;
   /* background-color: red; */
 }
 
 .card .choices img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
   border-radius: 50%;
   background-color: red;
 }
 
 .card .choices .choice {
-  height: 210px;
-  width: 210px;
+  height: 110px;
+  width: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,14 +120,14 @@ nav {
 }
 
 #rpc {
-  font-size: 30px;
-  margin-top: 160px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: 600;
   border: 2px solid #386641;
   color: #386641;
   border-radius: 35px;
-  height: 6vh;
-  width: 15vw;
+  height: 40px;
+  width: 80%;
 }
 
 .choice:hover {
@@ -133,17 +137,20 @@ nav {
 }
 
 #msg {
-  font-size: 30px;
-  margin-top: 140px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: 600;
   border: 2px solid #386641;
   color: #386641;
   border-radius: 35px;
-  height: 6vh;
-  width: 15vw;
+  height: 40px;
+  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .msg-container {
@@ -153,34 +160,49 @@ nav {
 }
 
 #roll {
-  font-size: 30px;
-  margin-top: 120px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: 600;
   border: 2px solid #386641;
   color: #386641;
   border-radius: 35px;
-  height: 6vh;
-  width: 10vw;
+  height: 40px;
+  width: 80%;
 }
 
 #pass {
-  font-size: 30px;
-  margin-top: 120px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: 600;
   border: 2px solid #386641;
   color: #386641;
   border-radius: 35px;
-  height: 6vh;
-  width: 10vw;
+  height: 40px;
+  width: 80%;
 }
 
 #atmpin {
-  font-size: 30px;
-  margin-top: 120px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: 600;
   border: 2px solid #386641;
   color: #386641;
   border-radius: 35px;
-  height: 6vh;
-  width: 10vw;
+  height: 40px;
+  width: 80%;
+}
+
+.btn {
+  margin-bottom: 2vw;
+}
+
+#secure_pin {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  border: 2px solid #386641;
+  color: #386641;
+  border-radius: 35px;
+  height: 40px;
+  width: 80%;
 }

@@ -119,9 +119,30 @@ let atmpin = document.querySelector("#atmpin");
 
 function generateATMPin() {
   const pin = Math.floor(1000 + Math.random() * 9000); // Generate a random 4-digit number
-  return pin.toString().padStart(4, "0"); // Ensure it's always 4 digits
+  return pin.toString().padStart(4, "0"); // must be 4
 }
 
 atmpin.addEventListener("click", () => {
   atm.textContent = generateATMPin();
 });
+
+//secure code
+let secure_code=document.querySelector("#secure");
+let secure_pin= document.querySelector("#secure_pin");
+
+function generateSecretCode() {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
+  let secretCode = '';
+  const codeLength = 12;
+
+  for (let i = 0; i < codeLength; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      secretCode += characters[randomIndex];
+  }
+
+  return secretCode;
+}
+
+secure_pin.addEventListener("click",()=>{
+  secure_code.textContent=generateSecretCode();
+})
